@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Student Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">StudyHub</a>
+
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero text-center" id="home">
+    <div class="container">
+        <h1>Welcome to StudyHub</h1>
+        <p>Your journey to knowledge starts here!</p>
+        <button class="btn btn-light" onclick="showMessage()">
+            Get Started
+        </button>
+        <p id="message"></p>
+    </div>
+</section>
+
+<section class="container my-5" id="subjects">
+    <h2 class="text-center mb-4">Explore Our Subjects</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS and JavaScript to create websites.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Mathematics</h3>
+                    <p>Improve your problem-solving and logical skills.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>English</h3>
+                    <p>Improve your reading, writing and communication.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about py-5" id="about">
+    <div class="container text-center">
+        <h2>About StudyHub</h2>
+        <p>StudyHub is a student learning platform designed to make learning simple and enjoyable.</p>
+
+        <button class="btn btn-primary" id="toggleTips">
+            Show Study Tips
+        </button>
+
+        <div id="tips" style="display:none;">
+            <p>1. Study every day.</p>
+            <p>2. Take regular breaks.</p>
+            <p>3. Practise what you learn.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5" id="contact">
+    <h2 class="text-center">Contact Us</h2>
+
+    <form id="contactForm" class="mx-auto mt-4" style="max-width:500px;">
+        <input type="text" id="name" class="form-control mb-3"
+        placeholder="Your Name" required>
+
+        <input type="email" id="email" class="form-control mb-3"
+        placeholder="Your Email" required>
+
+        <textarea id="comment" class="form-control mb-3"
+        placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn btn-primary w-100">
+            Submit
+        </button>
+        <p id="formMessage" class="mt-3 text-center"></p>
+    </form>
+</section>
+
+<footer class="text-center">
+    <p>© 2026 StudyHub. All Rights Reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
